@@ -1,5 +1,6 @@
 package gcfalgorism;
 
-public class EuclidGCF {
+public class EuclidGCF
+{
 
 }
