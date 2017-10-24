@@ -6,6 +6,15 @@ public class MyMath
 {
  public static String perfectNumbers(int n)
  {
+	 if count = 3;
+	 while(count >n)
+	 {
+		 if (MyMath.(isPerfect(n))
+	 }
+ }
+ 
+ 
+ {
 	 String result = "The first " + n + " perfect numbers are: ";
 
 	 
