@@ -16,6 +16,20 @@ public class MyMath
  public static boolean isPerfect(int n)
  {
 	 boolean result = false;
+	 int sum =0;
+	 String m = "";
+	 for (int k= 1; k<n; k++)
+	 {
+		if( n % k == 0)
+		{
+			m= m+k + " ";
+			sum += k;
+		}
+	 }
+	 if (sum == n)
+	 {
+		 result = true;
+	 }
 	 return result;
  }
 	
@@ -119,6 +133,7 @@ public class MyMath
         System.out.print(k + " ");
     System.out.println();
     System.out.println("Goldbach conjecture up to " + n + ": " + testGoldbach(n));
+    System.out.println(isPerfect(6));
   }
 }
 
