@@ -6,32 +6,36 @@ public class MyMath
 {
  public static String perfectNumbers(int n)
  {
-	 int count = 3;
+int count = 0;
+int num = 3;
+	 
 	 String result = "The first " + n + " perfect numbers are: ";
-	 while (count>n)
+	 while (count < n)
+	 
 	 {
-		 if (MyMath.isPerfect(n)==true)
-{
-	result = result + n + "";
-	count++;
-}
-	 
+		 if (isPerfect(n) == true)
+		 {
+			 result = result + num + " ";
+			 count++;
+			 }
+		 num++;
 	 }
-	 
-	 
-	 return result;
+ return result;
  }
+ 
+ 
+ 
+ 
+ 
  
  public static boolean isPerfect(int n)
  {
 	 boolean result = false;
 	 int sum =0;
-	 String m = "";
 	 for (int k= 1; k<n; k++)
 	 {
 		if( n % k == 0)
 		{
-			m= m+k + " ";
 			sum += k;
 		}
 	 }
@@ -142,7 +146,8 @@ public class MyMath
         System.out.print(k + " ");
     System.out.println();
     System.out.println("Goldbach conjecture up to " + n + ": " + testGoldbach(n));
-    System.out.println(isPerfect(6));
+   System.out.println("The first " + n + " perfect numbers are: " );
+    System.out.println(isPerfect());
   }
 }
 
