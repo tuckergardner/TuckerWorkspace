@@ -13,7 +13,7 @@ int num = 3;
 	 while (count < n)
 	 
 	 {
-		 if (isPerfect(n) == true)
+		 if (isPerfect(num) == true)
 		 {
 			 result = result + num + " ";
 			 count++;
@@ -31,7 +31,7 @@ int num = 3;
  public static boolean isPerfect(int n)
  {
 	 boolean result = false;
-	 int sum =0;
+	 int sum = 0;
 	 for (int k= 1; k<n; k++)
 	 {
 		if( n % k == 0)
@@ -147,7 +147,7 @@ int num = 3;
     System.out.println();
     System.out.println("Goldbach conjecture up to " + n + ": " + testGoldbach(n));
    System.out.println("The first " + n + " perfect numbers are: " );
-    System.out.println(isPerfect());
+    System.out.println(perfectNumbers(4));
   }
 }
 
