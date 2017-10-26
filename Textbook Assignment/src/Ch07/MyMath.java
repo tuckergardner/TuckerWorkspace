@@ -121,6 +121,20 @@ int num = 3;
 
     return true;
   }
+  public static String betterPerfect(int m)
+  {
+	String result = "The first " + m + " Perfect numbers are: ";
+	  int n = 4;
+	  int pow2 = 2;
+	  int count = 0;
+	  
+	  while (count < m)
+	  {
+		  
+	  }
+	  
+	return result;  
+  }
 
   /*********************************************************************/
 
