@@ -130,7 +130,14 @@ int num = 3;
 	  
 	  while (count < m)
 	  {
-		  
+		  if (isPrime(n-1))
+		  {
+			long perfect = (n/2)*(n-1);
+			result = result + perfect + "";
+			
+		  }
+		  pow2++;
+		  n*=2;
 	  }
 	  
 	return result;  
@@ -162,6 +169,7 @@ int num = 3;
     System.out.println("Goldbach conjecture up to " + n + ": " + testGoldbach(n));
    System.out.println("The first " + n + " perfect numbers are: " );
     System.out.println(perfectNumbers(4));
+    System.out.println(betterPerfect(4));
   }
 }
 
